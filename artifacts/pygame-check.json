@@ -1,0 +1,28 @@
+{
+  "video_driver": "dummy",
+  "audio": true,
+  "completed": true,
+  "pages": 13,
+  "deaths": 0,
+  "seconds": 33.367,
+  "souvenirs": 3,
+  "jumps": 20,
+  "snapshots": [
+    "menu",
+    "controls",
+    "settings",
+    "intro-letterbox",
+    "pause",
+    "level1-start",
+    "souvenir1",
+    "transition1",
+    "level2-start",
+    "souvenir2",
+    "astar-wall",
+    "transition2",
+    "level3-start",
+    "souvenir3",
+    "ending"
+  ],
+  "restart_verified": true
+}

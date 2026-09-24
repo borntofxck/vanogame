@@ -1,0 +1,607 @@
+{
+  "methods": 137,
+  "modules": {
+    "app": 17,
+    "audio": 6,
+    "commands": 0,
+    "config": 0,
+    "enemies": 14,
+    "geometry": 9,
+    "levels": 6,
+    "model": 15,
+    "pathfinding": 14,
+    "physics": 15,
+    "presentation": 32,
+    "timing": 9,
+    "__init__": 0
+  },
+  "source_sha256": {
+    "app": "9a1a4873f7a69a0864d93d151f91d99f374506c4f495c20f622e01c5b0d93c29",
+    "audio": "00cb60d6b83a4d56fb3b0f3ef03f5988c289f31ef4e806bcf4b03cfda7474b7e",
+    "commands": "217d1e326f8f73c58033f8972b8f106840cc4a01a066afc0a68daa58524db40d",
+    "config": "c06095fbccbd190b7a928c71ff5860a86bbf4542e4cfbacb21d98d49a1dd6bf9",
+    "enemies": "cd7c46a62f0aaff80bf6b0277339731b0337f5f56e343eaf1e9cb88cf3b12eed",
+    "geometry": "595f32d6a5ff278f56f6eca8944b68bf8833ed58fb6a57f461db194914d6dd5c",
+    "levels": "66f563d7d2ef3705ecf67509a7efdd0fc8d567f7e78a4593de4126e68e1997e2",
+    "model": "87678e8ae4390efbea4441e1027e2d8bec8f940487311e0657924dacce8a1d2c",
+    "pathfinding": "796cfdf2ce55a84b05633c8ad849c836f5ad0248ecc3d039f9e3cc3352d5858a",
+    "physics": "a93785e6dac2366b1884f79bf90452d48c3a24add33cbb2a0c7bce7a984d1009",
+    "presentation": "8d1e3509b1635f54a496b49b49d63adb9ba4220edfdb1414daaef866d5ab09f4",
+    "timing": "77316b644ea4c7c1f6f24a1a0b6f0d6084324a53c2c852e3ff596b9c7968df79",
+    "__init__": "ebfc4e9a184622f6a188d237de732625e2963233a316a268d4a267f07a6b66db"
+  },
+  "speech_words": 175,
+  "source_references": {
+    "app": {
+      "Settings.load": [
+        29,
+        35
+      ],
+      "Settings.save": [
+        37,
+        43
+      ],
+      "Application.__init__": [
+        51,
+        85
+      ],
+      "Application.set_scene": [
+        87,
+        93
+      ],
+      "Application.start": [
+        95,
+        99
+      ],
+      "Application._toggle_setting": [
+        101,
+        105
+      ],
+      "Application.activate": [
+        107,
+        140
+      ],
+      "Application.escape": [
+        142,
+        154
+      ],
+      "Application._mouse_position": [
+        156,
+        158
+      ],
+      "Application.handle_event": [
+        160,
+        206
+      ],
+      "Application.toggle_fullscreen": [
+        208,
+        214
+      ],
+      "Application.step": [
+        216,
+        225
+      ],
+      "Application.update": [
+        227,
+        239
+      ],
+      "Application.render": [
+        241,
+        277
+      ],
+      "Application.run": [
+        279,
+        294
+      ],
+      "Application.close": [
+        296,
+        297
+      ],
+      "main": [
+        300,
+        325
+      ]
+    },
+    "audio": {
+      "Audio.__init__": [
+        13,
+        37
+      ],
+      "Audio._pcm": [
+        40,
+        45
+      ],
+      "Audio._tone": [
+        47,
+        57
+      ],
+      "Audio._make_music": [
+        59,
+        85
+      ],
+      "Audio.configure": [
+        87,
+        100
+      ],
+      "Audio.play": [
+        102,
+        106
+      ]
+    },
+    "commands": {},
+    "config": {},
+    "enemies": {
+      "Enemy.__init__": [
+        24,
+        30
+      ],
+      "Enemy.update": [
+        32,
+        37
+      ],
+      "Enemy.update_behavior": [
+        40,
+        42
+      ],
+      "Enemy.reset": [
+        44,
+        48
+      ],
+      "PatrolEnemy.__init__": [
+        54,
+        58
+      ],
+      "PatrolEnemy.reset": [
+        60,
+        62
+      ],
+      "PatrolEnemy.update_behavior": [
+        64,
+        83
+      ],
+      "DroneEnemy.__init__": [
+        92,
+        107
+      ],
+      "DroneEnemy.reset": [
+        109,
+        116
+      ],
+      "DroneEnemy._change_state": [
+        118,
+        121
+      ],
+      "DroneEnemy.update_behavior": [
+        124,
+        153
+      ],
+      "DroneEnemy._find_path": [
+        155,
+        167
+      ],
+      "DroneEnemy._follow_path": [
+        169,
+        193
+      ],
+      "build_enemy": [
+        196,
+        207
+      ]
+    },
+    "geometry": {
+      "AABB.left": [
+        14,
+        15
+      ],
+      "AABB.right": [
+        18,
+        19
+      ],
+      "AABB.top": [
+        22,
+        23
+      ],
+      "AABB.bottom": [
+        26,
+        27
+      ],
+      "AABB.center": [
+        30,
+        31
+      ],
+      "AABB.intersects": [
+        33,
+        35
+      ],
+      "AABB.moved": [
+        37,
+        38
+      ],
+      "AABB.expanded": [
+        40,
+        42
+      ],
+      "AABB.copy": [
+        44,
+        45
+      ]
+    },
+    "levels": {
+      "_number": [
+        16,
+        17
+      ],
+      "validate_level": [
+        20,
+        121
+      ],
+      "validate_level.point": [
+        34,
+        38
+      ],
+      "validate_level.rect": [
+        40,
+        46
+      ],
+      "validate_level.identify": [
+        48,
+        53
+      ],
+      "load_levels": [
+        124,
+        128
+      ]
+    },
+    "model": {
+      "Item.from_spec": [
+        34,
+        37
+      ],
+      "LevelState.__init__": [
+        41,
+        60
+      ],
+      "LevelState.collected_pages": [
+        63,
+        64
+      ],
+      "LevelState._new_player": [
+        66,
+        67
+      ],
+      "LevelState.respawn": [
+        69,
+        77
+      ],
+      "GameSession.__init__": [
+        82,
+        84
+      ],
+      "GameSession.new_game": [
+        86,
+        95
+      ],
+      "GameSession.total_pages": [
+        98,
+        99
+      ],
+      "GameSession.total_souvenirs": [
+        102,
+        103
+      ],
+      "GameSession.souvenir_goal": [
+        106,
+        107
+      ],
+      "GameSession.drain_events": [
+        109,
+        111
+      ],
+      "GameSession._emit": [
+        113,
+        114
+      ],
+      "GameSession._die": [
+        116,
+        119
+      ],
+      "GameSession.advance_level": [
+        121,
+        131
+      ],
+      "GameSession.update": [
+        133,
+        196
+      ]
+    },
+    "pathfinding": {
+      "SearchGrid.is_walkable": [
+        22,
+        22
+      ],
+      "SearchGrid.neighbors": [
+        24,
+        24
+      ],
+      "SearchResult.cost": [
+        33,
+        34
+      ],
+      "manhattan": [
+        37,
+        38
+      ],
+      "astar": [
+        41,
+        78
+      ],
+      "NavigationGrid.__init__": [
+        90,
+        136
+      ],
+      "NavigationGrid.cell_center": [
+        138,
+        140
+      ],
+      "NavigationGrid.world_to_cell": [
+        142,
+        144
+      ],
+      "NavigationGrid.agent_box": [
+        146,
+        148
+      ],
+      "NavigationGrid.segment_clear": [
+        150,
+        162
+      ],
+      "NavigationGrid.is_walkable": [
+        164,
+        165
+      ],
+      "NavigationGrid.neighbors": [
+        167,
+        168
+      ],
+      "NavigationGrid.nearest_free": [
+        170,
+        179
+      ],
+      "NavigationGrid.reachable_target": [
+        181,
+        191
+      ]
+    },
+    "physics": {
+      "SpatialGrid.__init__": [
+        28,
+        36
+      ],
+      "SpatialGrid._occupied_cells": [
+        38,
+        46
+      ],
+      "SpatialGrid.query": [
+        48,
+        56
+      ],
+      "MovingPlatform.__init__": [
+        90,
+        100
+      ],
+      "MovingPlatform.reset": [
+        102,
+        105
+      ],
+      "MovingPlatform.update": [
+        107,
+        117
+      ],
+      "_overlap_x": [
+        120,
+        121
+      ],
+      "_overlap_y": [
+        124,
+        125
+      ],
+      "_move_axis": [
+        128,
+        162
+      ],
+      "move_body": [
+        165,
+        187
+      ],
+      "_support": [
+        190,
+        202
+      ],
+      "_approach": [
+        205,
+        206
+      ],
+      "_jump": [
+        209,
+        215
+      ],
+      "_platform_push": [
+        218,
+        243
+      ],
+      "update_player": [
+        246,
+        307
+      ]
+    },
+    "presentation": {
+      "time_text": [
+        24,
+        26
+      ],
+      "Text.__init__": [
+        32,
+        41
+      ],
+      "Text.font": [
+        43,
+        48
+      ],
+      "Text.draw": [
+        50,
+        65
+      ],
+      "Text.wrapped": [
+        67,
+        84
+      ],
+      "Sprites.__init__": [
+        88,
+        89
+      ],
+      "Sprites.actor": [
+        91,
+        147
+      ],
+      "Sprites.object": [
+        149,
+        182
+      ],
+      "Renderer.__init__": [
+        199,
+        217
+      ],
+      "Renderer.reset_camera": [
+        219,
+        225
+      ],
+      "Renderer.point": [
+        227,
+        228
+      ],
+      "Renderer.rect": [
+        230,
+        231
+      ],
+      "Renderer.glow": [
+        233,
+        241
+      ],
+      "Renderer.tick": [
+        243,
+        254
+      ],
+      "Renderer.accept_events": [
+        256,
+        275
+      ],
+      "Renderer.sky": [
+        277,
+        301
+      ],
+      "Renderer.window": [
+        303,
+        321
+      ],
+      "Renderer.architecture": [
+        323,
+        368
+      ],
+      "Renderer.solid": [
+        370,
+        385
+      ],
+      "Renderer.item": [
+        387,
+        446
+      ],
+      "Renderer.draw_game": [
+        448,
+        516
+      ],
+      "Renderer.hud": [
+        518,
+        554
+      ],
+      "Renderer.draw_debug": [
+        556,
+        589
+      ],
+      "Renderer.backdrop": [
+        591,
+        630
+      ],
+      "Renderer.buttons": [
+        632,
+        647
+      ],
+      "Renderer.front_menu": [
+        649,
+        659
+      ],
+      "Renderer.shade": [
+        661,
+        663
+      ],
+      "Renderer.panel": [
+        665,
+        674
+      ],
+      "Renderer.controls": [
+        676,
+        689
+      ],
+      "Renderer.intro": [
+        691,
+        704
+      ],
+      "Renderer.transition": [
+        706,
+        715
+      ],
+      "Renderer.ending": [
+        717,
+        743
+      ]
+    },
+    "timing": {
+      "InputBuffer.__init__": [
+        19,
+        25
+      ],
+      "InputBuffer.jump": [
+        27,
+        30
+      ],
+      "InputBuffer.interact": [
+        32,
+        33
+      ],
+      "InputBuffer.reset_checkpoint": [
+        35,
+        36
+      ],
+      "InputBuffer.consume": [
+        38,
+        46
+      ],
+      "InputBuffer.clear": [
+        48,
+        52
+      ],
+      "FixedStepper.__init__": [
+        58,
+        62
+      ],
+      "FixedStepper.clear": [
+        64,
+        66
+      ],
+      "FixedStepper.advance": [
+        68,
+        83
+      ]
+    },
+    "__init__": {}
+  }
+}
