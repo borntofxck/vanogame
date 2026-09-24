@@ -4,9 +4,21 @@ cd /d "%~dp0"
 
 if not exist ".venv\Scripts\python.exe" (
     echo Preparing the game for the first launch...
-    py -3.12 -m venv .venv 2>nul
-    if errorlevel 1 py -3 -m venv .venv 2>nul
-    if errorlevel 1 (
+    where py >nul 2>nul
+    if not errorlevel 1 py -3.12 -m venv .venv 2>nul
+    if not exist ".venv\Scripts\python.exe" (
+        where py >nul 2>nul
+        if not errorlevel 1 py -3 -m venv .venv 2>nul
+    )
+    if not exist ".venv\Scripts\python.exe" (
+        where python >nul 2>nul
+        if not errorlevel 1 python -m venv .venv 2>nul
+    )
+    if not exist ".venv\Scripts\python.exe" (
+        where python3 >nul 2>nul
+        if not errorlevel 1 python3 -m venv .venv 2>nul
+    )
+    if not exist ".venv\Scripts\python.exe" (
         echo Python 3.10 or newer was not found.
         echo Install Python from https://www.python.org/downloads/ and run start.bat again.
         pause
@@ -25,7 +37,7 @@ if errorlevel 1 (
     )
 )
 
-".venv\Scripts\python.exe" main.py
+".venv\Scripts\python.exe" main.py %*
 if errorlevel 1 (
     echo.
     echo The game closed with an error.
